@@ -1,15 +1,15 @@
 {
-    "name": "bulletin",
-    "description": "A Ghost theme",
+    "name": "chain-art",
+    "description": "Customized version of Bulletin Theme for Chain Art",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=4.0.0"
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Inoryum",
+        "email": "hello@inoryum.com",
+        "url": "https://inoryum.com"
     },
     "keywords": [
         "ghost",
@@ -40,6 +40,14 @@
         },
         "card_assets": true,
         "custom": {
+            "mc_action": {
+                "type": "text",
+                "group": "homepage"
+            },
+            "mc_api": {
+                "type": "text",
+                "group": "homepage"
+            },
             "title_font": {
                 "type": "select",
                 "options": ["Modern sans-serif", "Elegant serif"],
