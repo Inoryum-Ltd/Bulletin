@@ -2,7 +2,7 @@
     <header class="gh-article-header gh-canvas{{#match @custom.feature_image_width "Full"}} image-full{{else match @custom.feature_image_width "=" "Wide"}} image-wide{{/match}}">
         <h1 class="gh-article-title">{{title}}</h1>
 
-        {{#is "post"}}
+        {{!-- {{#is "post"}}
             <span class="gh-article-meta">
                 {{#primary_author}}By <a href="{{url}}">{{name}}</a>{{/primary_author}}
                 {{#if primary_tag}}
@@ -13,6 +13,7 @@
                 <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
             </span>
         {{/is}}
+        --}}
 
         {{#if custom_excerpt}}
             <p class="gh-article-excerpt">{{custom_excerpt}}</p>
