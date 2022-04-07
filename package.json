@@ -47,7 +47,7 @@
             },
             "cta_description": {
                 "type": "text",
-                "default": "",
+                "default": "Don’t miss out on the latest issues. Sign up now to get access to the library of members-only issues.",
                 "group": "homepage"
             },
 
