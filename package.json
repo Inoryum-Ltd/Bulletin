@@ -40,6 +40,17 @@
         },
         "card_assets": true,
         "custom": {
+            "cta_title": {
+                "type": "text",
+                "default": "Stay tuned!",
+                "group": "homepage"
+            },
+            "cta_description": {
+                "type": "text",
+                "default": "",
+                "group": "homepage"
+            },
+
             "mc_action": {
                 "type": "text",
                 "group": "homepage"

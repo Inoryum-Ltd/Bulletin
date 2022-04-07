@@ -18,8 +18,8 @@
 
                 <section class="gh-home-subscribe">
                     {{^if @member}}
-                        <h2 class="gh-home-subscribe-title">Stay tuned</h2>
-                        <p class="gh-home-subscribe-description">Don’t miss out on the latest issues. Sign up now to get access to the library of members-only issues.</p>
+                        <h2 class="gh-home-subscribe-title">{{@custom.cta_title}}</h2>
+                        <p class="gh-home-subscribe-description">{{@custom.cta_description}}</p>
 
                         <a class="gh-home-subscribe-input" href="#/portal/signup" data-portal="signup">
                             jamie@example.com
@@ -48,10 +48,12 @@
                         <article class="gh-article {{post_class}}">
                             <header class="gh-article-header">
                                 <h2 class="gh-article-title">{{title}}</h2>
-                                <span class="gh-article-meta">
-                                    By {{primary_author.name}} —
-                                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
-                                </span>
+                                {{!-- 
+                                    <span class="gh-article-meta">
+                                        By {{primary_author.name}} —
+                                        <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+                                    </span>
+                                --}}
                             </header>
 
                             {{#if feature_image}}
