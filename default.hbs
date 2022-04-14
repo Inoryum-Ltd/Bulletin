@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap">
+    {{#is "home"}}
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet">
+    {{/is}}
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
     <link rel="stylesheet" href="{{asset "css/custom.css"}}">
 
@@ -18,7 +21,7 @@
     {{ghost_head}}
 </head>
 
-<body class="{{body_class}} is-head-brand{{^if @member.paid}}{{#is "home"}} is-home-cta{{/is}}{{/if}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}" id="top">
+<body class="{{body_class}} is-head-brand{{^if @member.paid}}{{#is "home"}} is-home-cta{{/is}}{{/if}} has-serif-title has-serif-body" id="top">
     <div class="gh-site">
         {{^if @member.paid}}
             {{^is "home"}}
@@ -45,6 +48,7 @@
 
     <script src="{{asset "built/main.min.js"}}"></script>
     <script src="{{asset "js/custom.js"}}"></script>
+    {{{block "scripts"}}}
 
     {{ghost_foot}}
 </body>

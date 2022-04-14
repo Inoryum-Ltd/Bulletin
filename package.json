@@ -51,23 +51,12 @@
                 "group": "homepage"
             },
 
-            "mc_action": {
+            "number_of_subscribers": {
                 "type": "text",
                 "group": "homepage"
             },
-            "mc_api": {
-                "type": "text",
-                "group": "homepage"
-            },
-            "title_font": {
-                "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
-                "default": "Modern sans-serif"
-            },
-            "body_font": {
-                "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
-                "default": "Elegant serif"
+            "instagram_page": {
+                "type": "text"
             },
             "feature_image_width": {
                 "type": "select",

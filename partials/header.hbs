@@ -16,6 +16,23 @@
         </nav>
 
         <div class="gh-head-actions">
+            {{#if @site.twitter}}
+                <a href="{{twitter_url @site.twitter}}" class="gh-head-btn gh-btn social" title="Twitter" target="_blank" rel="noopener">
+                    {{> "icons/twitter"}}
+                </a>
+            {{/if}}
+
+            {{#if @site.facebook}}
+                <a href="{{facebook_url @site.facebook}}" class="gh-head-btn gh-btn social" title="Facebook" target="_blank" rel="noopener">
+                   {{> "icons/facebook"}}
+                </a>
+            {{/if}}
+
+            {{#if @custom.instagram_page}}
+                <a href="{{@custom.instagram_page}}" class="gh-head-btn gh-btn social" title="Instagram" target="_blank" rel="noopener">
+                    {{> "icons/instagram"}}
+                </a>
+            {{/if}}
             {{#unless @member}}
                 <a class="gh-head-btn gh-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
             {{else}}

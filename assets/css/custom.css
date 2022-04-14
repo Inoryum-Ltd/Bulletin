@@ -28,3 +28,44 @@ body:not(.home-template){
       scroll-behavior: smooth;
     }
   }
+
+  .gh-head-btn.gh-btn.social {
+    height: 34px;
+    width: 34px;
+    padding: 0;
+}
+.gh-head-actions {
+    gap: 1rem;
+}
+
+.gh-home-cta {
+    background: #08172d !important;
+    color: #fff;
+}
+
+.is-head-brand:not(.is-head-transparent) .gh-head {
+    background: #08172d !important;
+}
+.gh-home-latest-footer .gh-btn {
+    background: #08172d !important;
+}
+.gh-home-latest-indicator {
+    background-color: #08172d !important;
+}
+
+.home-template.is-head-brand.is-home-cta.has-serif-body {
+    font-family: 'Archivo', sans-serif !important;
+}
+.counter {
+    margin-top: 4rem;
+    font-style: italic;
+}
+
+.has-serif-title .gh-home-subscribe-title {
+    font-family: 'Archivo', sans-serif !important;
+}
+
+
+.home-template.has-serif-title .gh-article-title {
+    font-family: inherit !important;
+}
